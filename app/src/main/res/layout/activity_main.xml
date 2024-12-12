@@ -25,7 +25,8 @@
         android:text="@string/pedalea_hacia_el_xito_acad_mico_con_nuestro_servicio_de_alquiler_de_bicicletas_dentro_de_la_universidad"
         android:textAlignment="center"
         android:padding="16dp"
-        android:textColor="#000000"
+        android:textColor="#E57373"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -33,7 +34,7 @@
     <EditText
         android:id="@+id/email"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Correo electrónico"
         android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@id/introText"
@@ -44,7 +45,7 @@
     <EditText
         android:id="@+id/password"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Contraseña"
         android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@id/email"
@@ -57,7 +58,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ingresar"
-        android:backgroundTint="#FFFF00"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,29 +78,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
-    <TextView
+    <Button
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿No tienes una cuenta aún? REGÍSTRATE"
         android:textColor="#0000FF"
         android:textSize="14sp"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/forgotPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
-    <!-- Texto para el contador -->
-    <TextView
-        android:id="@+id/textViewCounter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contador: 0"
-        android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/register"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

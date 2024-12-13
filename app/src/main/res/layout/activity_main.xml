@@ -3,6 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    ##No se si es necesario pero no estaba en la rama principal
+    #android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -29,6 +31,20 @@
         app:layout_constraintTop_toBottomOf="@id/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#EDEDED"
+        android:contentDescription='@string/IA'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/warning" />
+
 
     <EditText
         android:id="@+id/email"
@@ -98,6 +114,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
+
+
+            ##Todo luego tiene que ver con los botones
+   #<androidx.fragment.app.FragmentContainerView
+        #android:id="@+id/map_fragment"
+        #android:name="com.google.android.gms.maps.SupportMapFragment"
+        #android:layout_width="0dp"
+        #android:layout_height="0dp"
+        #app:layout_constraintBottom_toBottomOf="parent"
+        #app:layout_constraintEnd_toEndOf="parent"
+        #app:layout_constraintHorizontal_bias="0.0"
+        #app:layout_constraintStart_toStartOf="parent"
+        #app:layout_constraintTop_toTopOf="parent"
+        #app:layout_constraintVertical_bias="0.0" />
+
+  #<ImageButton
+        #android:id="@+id/imageButton"
+        #android:layout_width="57dp"
+        #android:layout_height="56dp"
+        #android:layout_marginStart="16dp"
+        #android:layout_marginBottom="16dp"
+        #android:background="#EDEDED"
+        #android:contentDescription='@string/IA'
+        #app:layout_constraintBottom_toBottomOf="parent"
+        #app:layout_constraintStart_toStartOf="parent"
+        #app:srcCompat="@mipmap/warning" />
+
+    ##<ImageButton
+        #android:id="@+id/imageButton2"
+        #android:layout_width="53dp"
+        #android:layout_height="56dp"
+        #android:layout_marginEnd="16dp"
+        #android:layout_marginBottom="16dp"
+        #android:background="#CECECE"
+        #android:contentDescription="@string/IB"
+        #app:layout_constraintBottom_toBottomOf="parent"
+        #app:layout_constraintEnd_toEndOf="parent"
+        #app:srcCompat="@mipmap/boton" />
+
+    #<ImageButton
+        #android:id="@+id/imageButton3"
+        #android:layout_width="wrap_content"
+        #android:layout_height="wrap_content"
+        #android:background="#FFFFFF"
+        #android:contentDescription="@string/QR"
+        #app:layout_constraintBottom_toBottomOf="parent"
+        #app:layout_constraintEnd_toEndOf="parent"
+        #app:layout_constraintHorizontal_bias="0.497"
+        #app:layout_constraintStart_toStartOf="parent"
+        #app:layout_constraintTop_toTopOf="parent"
+        #app:layout_constraintVertical_bias="1.0"
+        #app:srcCompat="@mipmap/qrccc" />
+
+    #<ImageButton
+        #android:id="@+id/imageButton4"
+        #android:layout_width="wrap_content"
+        #android:layout_height="wrap_content"
+        #android:contentDescription="@string/LL"
+        #app:layout_constraintBottom_toBottomOf="parent"
+        #app:layout_constraintEnd_toEndOf="parent"
+        #app:layout_constraintHorizontal_bias="0.083"
+        #app:layout_constraintStart_toStartOf="parent"
+        #app:layout_constraintTop_toTopOf="parent"
+        #app:layout_constraintVertical_bias="0.023"
+        #app:srcCompat="@mipmap/rayas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

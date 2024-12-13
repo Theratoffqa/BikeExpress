@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
 ##Hay muchas cosas que cambie asi que lo aniaditodo
 #package com.example.myvideo
-
+#
 #import android.os.Bundle
 #import androidx.activity.enableEdgeToEdge
 #import androidx.appcompat.app.AppCompatActivity

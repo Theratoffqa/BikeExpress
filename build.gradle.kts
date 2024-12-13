@@ -3,4 +3,12 @@ plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
     alias(libs.plugins.kotlin.compose) apply false
+    ##Aniado para el mapa
+    #alias(libs.plugins.map.secret) apply false
 }
+
+
+
+
+
+

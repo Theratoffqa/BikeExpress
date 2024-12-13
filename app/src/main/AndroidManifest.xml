@@ -17,12 +17,20 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
+            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        ##Para el api
+ ##<meta-data
+            ##android:name="com.google.android.geo.API_KEY"
+            ##android:value="${MAPS_KEY}" />
+
+
     </application>
 
 </manifest>
+

@@ -2,4 +2,18 @@
     <string name="app_name">BikeExpress</string>
     <string name="pedalea_hacia_el_xito_acad_mico_con_nuestro_servicio_de_alquiler_de_bicicletas_dentro_de_la_universidad">¡Pedalea hacia el éxito académico con nuestro servicio de alquiler de bicicletas dentro de la universidad!</string>
     <string name="ingresar">Ingresar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="tv_opinion_text">Danos tu opinión:</string>
+    <string name="et_opinion_hint">Escribe tu opinión aquí</string>
+    <string name="tv_titulo_text">CALIFICA NUESTRO SERVICIO</string>
+    <string name="btn_cerrar_dialogo">Cerrar</string>
+    <string name="etRepeatPassword">Repetir Contraseña</string>
+    <string name="etPassword">Contraseña</string>
+    <string name="etEmail">Correo electrónico</string>
+    <string name="etTelefono">Teléfono</string>
+    <string name="etDni">DNI/Carnet de Extranjería</string>
+    <string name="etApellidos">Apellidos</string>
+    <string name="etNombres">Nombres</string>
+
 </resources>

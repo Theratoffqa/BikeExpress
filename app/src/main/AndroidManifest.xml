@@ -40,9 +40,13 @@
             android:name=".RegisterActivity"
             android:exported="true"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CalificarServicioActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme" />
         <!-- Para el API -->
         <meta-data
         android:name="com.google.android.geo.API_KEY"
-        android:value="${MAPS_KEY}" />
+        android:value="@string/maps_key" />
     </application>
 </manifest>

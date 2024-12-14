@@ -39,6 +39,11 @@ class MainActivity : AppCompatActivity() {
             if (inputEmail == savedEmail && inputPassword == savedPassword) {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
                 // Navegar al menú principal
+
+                val intent = Intent(this, mapa::class.java)
+                startActivity(intent)
+
+
             } else {
                 Toast.makeText(this, "Correo o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             }

@@ -15,5 +15,8 @@
     <string name="etDni">DNI/Carnet de Extranjería</string>
     <string name="etApellidos">Apellidos</string>
     <string name="etNombres">Nombres</string>
-
+    <string name="IB">Informacion</string>
+    <string name="IA">Informacion2</string>
+    <string name="QR">Informacion3</string>
+    <string name="LL">Informacion4</string>
 </resources>

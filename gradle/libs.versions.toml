@@ -1,15 +1,30 @@
 [versions]
+##actualice el a una version más reciente
+#agp = "8.7.3" 
 agp = "8.7.2"
+
+##Yo use una version anterior de kotlin, habra problemas con eso?
+#kotlin = "1.9.24"
 kotlin = "2.0.0"
+#mapsSecret = "2.0.1"
 coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
+
+##Yo solo use el activity no agurege eso de "compose"
+#activity = "1.9.3"
 activityCompose = "1.9.3"
 composeBom = "2024.04.01"
 constraintlayout = "2.2.0"
 appcompat = "1.7.0"
+##Aniadi "material"
+#material = "1.12.0"
+
+##OJO sin el "googleMaps" no funcionara el mapa
+#googleMaps = "17.0.0"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,6 +41,13 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+##Librerias encesarias
+#material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+#androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+#google-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "googleMaps" }
+
+
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 
@@ -33,4 +55,7 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+##Lo unico nuevo en los plugins
+#map-secret = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "mapsSecret" }
 

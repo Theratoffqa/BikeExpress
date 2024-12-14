@@ -51,15 +51,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.appcompat)
-
-    
-    ##Comentario-Anthony Estas 3 implementaciones  son necesarias para correr el google maps
-    #implementation(libs.material)
-    #implementation(libs.androidx.activity)
-    #implementation(libs.google.maps)
-    
-
-    
+    implementation(libs.qr.scanner)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -67,4 +59,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    /*Estas 3 implementaciones son necesarias para el google maps*/
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.google.maps)
 }

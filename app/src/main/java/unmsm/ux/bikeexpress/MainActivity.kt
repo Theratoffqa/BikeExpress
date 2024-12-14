@@ -6,6 +6,15 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.EditText
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,21 +50,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-##Hay muchas cosas que cambie asi que lo aniaditodo
-#package com.example.myvideo
-#
-#import android.os.Bundle
-#import androidx.activity.enableEdgeToEdge
-#import androidx.appcompat.app.AppCompatActivity
-#import androidx.core.view.ViewCompat
-#import androidx.core.view.WindowInsetsCompat
-#import com.google.android.gms.maps.CameraUpdateFactory
-#import com.google.android.gms.maps.GoogleMap
-#import com.google.android.gms.maps.OnMapReadyCallback
-#import com.google.android.gms.maps.SupportMapFragment
-#import com.google.android.gms.maps.model.LatLng
-
-#class MainActivity : AppCompatActivity(), OnMapReadyCallback {
+/*class MainActivity : AppCompatActivity(), OnMapReadyCallback {
     #override fun onCreate(savedInstanceState: Bundle?) {
         #super.onCreate(savedInstanceState)
         #enableEdgeToEdge()
@@ -81,3 +76,4 @@ class MainActivity : AppCompatActivity() {
 
 
 #}
+*/

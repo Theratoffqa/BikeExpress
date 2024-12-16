@@ -56,12 +56,18 @@ class mapa : AppCompatActivity(),  OnMapReadyCallback {
         navigationView.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.nav_home -> {
-                    // Maneja la acción de "Home"
+                    val intent = Intent(this, CalificarServicioActivity::class.java)
+                    startActivity(intent)
                 }
-                /*
-                R.id.nav_settings -> {
-                    // Maneja la acción de "Settings"
-                }*/
+
+                R.id.nav_mapa -> {
+                    val intent = Intent(this, mapa::class.java)
+                    startActivity(intent)
+                }
+                R.id.nav_logout -> {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
             }
             // Cierra el Drawer después de seleccionar una opción
             drawerLayout.closeDrawer(GravityCompat.START)

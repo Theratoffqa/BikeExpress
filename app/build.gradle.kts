@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.constraintlayout:constraintlayout:2.2.0")
+    implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -59,8 +59,12 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
     /*Estas 3 implementaciones son necesarias para el google maps*/
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.google.maps)
+    /*Implementaciones para la barra lateral*/
+    implementation(libs.androidxDrawerLayout)
+    implementation(libs.material)
 }

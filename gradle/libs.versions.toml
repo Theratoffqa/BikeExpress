@@ -17,6 +17,7 @@ qrScanner = "4.3.0"
 appcompat = "1.7.0"
 material = "1.12.0"
 
+androidxDrawerLayout = "1.2.0"
 googleMaps = "17.0.0"
 
 
@@ -43,6 +44,8 @@ google-maps = { group = "com.google.android.gms", name = "play-services-maps", v
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 qr-scanner = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "qrScanner" }
+
+androidxDrawerLayout = { module = "androidx.drawerlayout:drawerlayout", version.ref = "androidxDrawerLayout" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

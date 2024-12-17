@@ -1,12 +1,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_home"
-        android:title="Califícanos" />
-    <item
         android:id="@+id/nav_mapa"
-        android:title="Mapa" /> -->
+        android:title="Mapa"
+        android:background="@drawable/menu_item_background" />  <!-- Fondo blanco -->
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Califícanos"
+        android:background="@drawable/menu_item_background" />  <!-- Fondo blanco -->
+
     <item
         android:id="@+id/nav_logout"
-        android:title="Cerrar sesion" /> -->
-    <!-- Puedes agregar más ítems según lo necesites -->
+        android:title="Cerrar sesión"
+        android:background="@drawable/menu_item_background" />  <!-- Fondo blanco -->
 </menu>

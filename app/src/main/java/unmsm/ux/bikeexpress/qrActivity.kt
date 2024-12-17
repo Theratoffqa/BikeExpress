@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -57,8 +58,27 @@ class qrActivity : AppCompatActivity() {
                 append("COD:")
                 append(result.contents)
             }
-            val intent = Intent(this, notificacionActivity::class.java)
+            mostrarDialogoGracias()
+        }
+    }
+    private fun mostrarDialogoGracias() {
+        // Crear el diálogo
+        val dialog = AlertDialog.Builder(this).create()
+
+        // Inflar el diseño personalizado
+        val layout = layoutInflater.inflate(R.layout.notificacionqr, null)
+        dialog.setView(layout)
+
+        // Configurar el botón Cerrar
+        val aceptarButton: Button = layout.findViewById(R.id.aceptarButton)
+        aceptarButton.setOnClickListener {
+            dialog.dismiss() // Cerrar el diálogo
+
+            val intent = Intent(this, mapa::class.java)
             startActivity(intent)
         }
+
+        // Mostrar el diálogo
+        dialog.show()
     }
 }

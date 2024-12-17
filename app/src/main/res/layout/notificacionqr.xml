@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".notificacionActivity"
+
     >
 
 
@@ -13,7 +13,7 @@
         android:id="@+id/textoQ1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:autoLink="web"
         android:gravity="center"
         android:text="¡Disfruta tu viaje!"
@@ -23,13 +23,13 @@
         android:textColorLink="@color/black"
         android:textSize="22dp"
         app:layout_constraintBottom_toTopOf="@+id/checkImg"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <ImageView
         android:id="@+id/checkImg"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="68dp"
         android:src="@drawable/check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -40,7 +40,7 @@
         android:id="@+id/biciImg"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="288dp"
         android:src="@drawable/bici"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -56,8 +56,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
+        app:layout_constraintTop_toBottomOf="@+id/biciImg"
+        app:layout_constraintVertical_bias="0.084"
+        android:backgroundTint="#E57373"
+        android:textColor="#FFFFFF"/>
 
     <TextView
         android:id="@+id/textoQ"

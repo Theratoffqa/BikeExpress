@@ -8,9 +8,11 @@ import android.widget.ImageButton
 import android.widget.RatingBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import unmsm.ux.bikeexpress.ui.theme.crearGradienteFondo
 
 
 class CalificarServicioActivity : AppCompatActivity() {
@@ -24,6 +26,7 @@ class CalificarServicioActivity : AppCompatActivity() {
         val etOpinion: EditText = findViewById(R.id.etOpinion)
         val btnEnviar: Button = findViewById(R.id.btnEnviar)
         val btnCancelar: Button = findViewById(R.id.btnCancelar)
+
 
         // Configurar acción del botón Enviar
         btnEnviar.setOnClickListener {
@@ -47,6 +50,7 @@ class CalificarServicioActivity : AppCompatActivity() {
         }
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
+        drawerLayout.background = crearGradienteFondo()
         val navigationView: NavigationView = findViewById(R.id.nav_view)
 
         // Configura el botón "rayas" para abrir el Drawer

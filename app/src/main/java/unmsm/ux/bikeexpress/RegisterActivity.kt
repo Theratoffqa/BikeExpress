@@ -6,6 +6,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import unmsm.ux.bikeexpress.ui.theme.crearGradienteFondo
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +22,8 @@ class RegisterActivity : AppCompatActivity() {
         val etPassword: EditText = findViewById(R.id.etPassword)
         val etRepeatPassword: EditText = findViewById(R.id.etRepeatPassword)
         val btnRegister: Button = findViewById(R.id.btnRegister)
+        val rootLayout = findViewById<ConstraintLayout>(R.id.register)
+        rootLayout.background = crearGradienteFondo()
 
         btnRegister.setOnClickListener {
             val nombres = etNombres.text.toString()

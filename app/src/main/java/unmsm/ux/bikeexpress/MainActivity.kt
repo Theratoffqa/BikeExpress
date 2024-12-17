@@ -6,6 +6,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import unmsm.ux.bikeexpress.ui.theme.crearGradienteFondo
+import androidx.constraintlayout.widget.ConstraintLayout
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         val buttonIngresar: Button = findViewById(R.id.loginButton)
         val buttonRegistrarse: Button = findViewById(R.id.register)
+        val rootLayout = findViewById<ConstraintLayout>(R.id.main)
+        rootLayout.background = crearGradienteFondo()
+
 
         buttonIngresar.setOnClickListener {
             val sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE)

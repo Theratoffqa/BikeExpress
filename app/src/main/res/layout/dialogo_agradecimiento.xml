@@ -14,8 +14,8 @@
 
     <ImageView
         android:id="@+id/imgAgradecimiento"
-        android:layout_width="363dp"
-        android:layout_height="373dp"
+        android:layout_width="320dp"
+        android:layout_height="322dp"
         android:layout_marginTop="72dp"
         android:src="@drawable/gracias"
         app:layout_constraintEnd_toEndOf="parent"

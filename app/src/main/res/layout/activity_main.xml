@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ingresar"
-        android:backgroundTint="#F44336"
+        android:backgroundTint="#575757"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/password"
